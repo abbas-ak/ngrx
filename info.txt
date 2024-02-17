@@ -29,3 +29,6 @@ git push -u origin 01-ngrx-props-payload
 VS Code::
 Ctrl + / : Single Line Comment
 Shift + Alt + A: Multi Line Comment
+
+Chrome Extention: Redux DevTools
+ng add @ngrx/store-devtools
