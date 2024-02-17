@@ -1,0 +1,27 @@
+npm install @ngrx/store
+ng g s shared/master
+It will create, 
+  app/shared/master.service.ts
+Create folder, 
+  app/shared/store
+Create three files,
+  app/shared/store/counter.state.ts,
+  app/shared/store/counter.actions.ts,
+  app/shared/store/counter.reducer.ts
+
+ng g c component/counterbutton
+ng g c component/counterdisplay
+
+app.module.ts 
+  StoreModule.forRoot({counter: counterReducer})
+
+ng add @angular/material
+File: material.module.ts
+
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/abbas-ak/ngrx.git
+git push -u origin main
