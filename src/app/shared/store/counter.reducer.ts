@@ -1,7 +1,7 @@
 //Reducer will take two inputs: action and store. It will return new Store 
 
 import { createReducer, on } from "@ngrx/store";
-import { customincrement, decrement, increment, reset } from "./counter.actions";
+import { changechannelname, customincrement, decrement, increment, reset } from "./counter.actions";
 import { initialState } from "./counter.state";
 
 const _counterReducer = createReducer(initialState, 
@@ -29,7 +29,12 @@ const _counterReducer = createReducer(initialState,
       counter: action.action =='add' ? state.counter+action.value : state.counter-action.value
     };
   }),
-  
+  on(changechannelname, (state, action) => {
+    return {
+      ...state,
+      channelname: action.channel
+    };
+  }),
 );
 
 export function counterReducer(state: any, action: any) {

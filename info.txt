@@ -25,3 +25,7 @@ git commit -m "first commit"
 git branch -M 01-ngrx-props-payload
 git remote add origin https://github.com/abbas-ak/ngrx.git
 git push -u origin 01-ngrx-props-payload
+
+VS Code::
+Ctrl + / : Single Line Comment
+Shift + Alt + A: Multi Line Comment
