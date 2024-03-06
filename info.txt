@@ -1,5 +1,6 @@
 npm install @ngrx/store
 ng g s shared/master
+ng g s shared/data
 It will create, 
   app/shared/master.service.ts
 Create folder, 
@@ -32,3 +33,31 @@ Shift + Alt + A: Multi Line Comment
 
 Chrome Extention: Redux DevTools
 ng add @ngrx/store-devtools
+
+
+
+https://www.youtube.com/watch?v=n36qwMkM3S8&list=PLfyWdpsiUiPC7bHmDDDM6gGgfo3mgMCAC&index=9
+https://www.youtube.com/watch?v=1FgSlvsywXg
+
+
+Nav Bar and Auth Guard::
+ng g g guard/auth
+ng g c component/home --module app
+ng g c component/counter --module app
+ng g c component/blog --module app
+
+
+ng g c component/addblog --module app
+
+
+npm i angular-in-memory-web-api 
+npm i ngx-mask
+npm i @ngrx/effects@17.1.0 --save 
+
+npm i json-server -g
+npm i json-server@0.17.2 -g
+json-server --watch db.json
+
+http://localhost:3000/Blogs
+http://localhost:3000/Blogs?_limit=1&_sort=-id
+http://localhost:3000/Blogs?_limit=1&_sort=id&_order=desc

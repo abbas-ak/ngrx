@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MasterService } from './shared/master.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngrx2';
+
+  constructor(private service: MasterService){
+
+  }
+
+  ngOnInit() {
+    /* this.service.getAll().subscribe(data => {
+      console.log("GetAll::", data);
+    }); */
+  }
 }
